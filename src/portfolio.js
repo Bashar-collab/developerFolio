@@ -219,19 +219,7 @@ const bigProjects = {
   subtitle: "SOME PROJECTS I WORKED ON AND CURRENTLY WORKING ON",
   projects: [
     {
-      // image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Reparo",
-      projectDesc: "Project for providing fix-repair services using Laravel + Postgresql",
-      footerLink: [
-        {
-          name: "See source code",
-          url: "https://github.com/Bashar-collab/Reparo"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      // image: require("./assets/images/nextuLogo.webp"),
+      image: require("./assets/images/marketing.jpg"),
       projectName: "Marketing",
       projectDesc: "A backend system designed for a service-based or marketing-oriented platform where businesses can promote offerings, customers can book them, and real-time interaction is optimized through smart backend design.",
       footerLink: [
@@ -239,6 +227,18 @@ const bigProjects = {
           name: "See source code",
           url: "https://github.com/Bashar-collab/Marketing"
         }
+      ]
+    },
+    {
+      image: require("./assets/images/logo.ico"),
+      projectName: "Reparo",
+      projectDesc: "A backend-driven service marketplace designed to connect customers with skilled workers for home and office repair needs. The system handles the full lifecycle from service browsing to booking, tracking, and feedback — with a secure, role-based API architecture.",
+      footerLink: [
+        {
+          name: "See source code",
+          url: "https://github.com/Bashar-collab/Reparo"
+        }
+        //  you can add extra buttons here.
       ]
     }
   ],
