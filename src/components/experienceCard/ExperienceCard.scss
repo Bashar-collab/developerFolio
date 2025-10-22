@@ -6,6 +6,8 @@
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  transition: all 0.3s ease;
+  transform: translateY(0);
 }
 
 .experience-card-dark {
@@ -14,10 +16,18 @@
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
+  transition: all 0.3s ease;
+  transform: translateY(0);
 }
 
 .experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px, $lightBoxShadow 0px 0px 20px 0px;
+  transform: translateY(-10px) scale(1.02);
+}
+
+.experience-card-dark:hover {
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px, $darkBoxShadow 0px 0px 20px 0px;
+  transform: translateY(-10px) scale(1.02);
 }
 
 .experience-banner {
@@ -35,6 +45,12 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.experience-banner:hover {
+  background-size: 160%;
+  filter: brightness(1.1);
 }
 
 .experience-blurred_div {
@@ -89,6 +105,12 @@
   height: 8rem;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.experience-roundedimg:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0.7rem 1.5rem $lightBoxShadowDarker;
 }
 
 .experience-text-role {

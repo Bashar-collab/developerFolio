@@ -9,9 +9,13 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  border-radius: 10px;
+  transform: translateY(0);
 }
+
 .repo-card-div:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px, $lightBoxShadow 0px 0px 20px 0px;
+  transform: translateY(-10px) scale(1.02);
 }
 
 .repo-stats {
@@ -80,6 +84,9 @@
 .dark-card-mode {
   background-color: $darkBackground;
   color: $textColorDark;
+  transition: all 0.3s ease;
+  transform: translateY(0);
+  border-radius: 10px;
 }
 .dark-card-mode p {
   color: $textColorDark;
@@ -91,5 +98,6 @@
 
 .dark-card-mode:hover {
   background-color: $buttonColor !important;
-  box-shadow: 0px 0px 16px $darkBoxShadow;
+  box-shadow: 0px 0px 16px $darkBoxShadow, 0px 0px 20px 0px $darkBoxShadow;
+  transform: translateY(-10px) scale(1.02);
 }

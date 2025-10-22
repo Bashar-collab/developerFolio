@@ -4,6 +4,11 @@
   max-width: 100%;
   height: auto;
   width: 250px;
+  transition: all 0.3s ease;
+}
+
+.card-image:hover {
+  transform: scale(1.1);
 }
 .card-title {
   color: $titleColor;
@@ -25,6 +30,7 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
+  transform: translateY(0);
 }
 .project-card-light {
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
@@ -37,17 +43,19 @@
   box-shadow: 0px 10px 30px -15px $darkBoxShadow;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
+  transition: all 0.3s ease;
 }
 
 .project-detail {
   text-align: center;
 }
 .project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px, $lightBoxShadow 0px 0px 20px 0px;
+  transform: translateY(-10px) scale(1.02);
 }
 .project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+  box-shadow: 0px 20px 30px -10px $darkBoxShadow, 0px 0px 20px 0px $darkBoxShadow;
+  transform: translateY(-10px) scale(1.02);
 }
 .project-image {
   position: relative;
@@ -56,6 +64,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
 }
 
 .projects-container {
