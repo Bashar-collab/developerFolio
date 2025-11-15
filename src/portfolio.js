@@ -183,7 +183,7 @@ const workExperiences = {
       date: "October 2025 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Django REST API platform with course management, video streaming (Bunny Storage CDN and Streaming), phone-based OTP authentication, student enrollment, quizzes, and role-based access control. Features resumable uploads, Celery async processing, and scalable cloud architecture."
+        "Developed Django REST API platform with course management, video streaming (Bunny Storage CDN and Streaming), phone-based OTP authentication, student enrollment, quizzes, and role-based access control. Features resumable uploads, Celery async processing, and scalable cloud architecture."
       ]
     },
     {
