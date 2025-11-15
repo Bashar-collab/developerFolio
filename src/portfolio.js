@@ -35,7 +35,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/Bashar-collab",
   linkedin: "https://www.linkedin.com/in/bashar-kalla-1a3643338",
-  gmail: "mohammadkalla17@gmail.com",
+  gmail: "basharkalla2001@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/Basharcool",
   instagram: "https://www.instagram.com/bk_901/",
@@ -178,6 +178,26 @@ const workExperiences = {
   experience: [
     {
       role: "Backend Developer",
+      company: "One Door Group",
+      companylogo: require("./assets/images/one-door.png"),
+      date: "October 2025 – Present",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Django REST API platform with course management, video streaming (Bunny Storage CDN and Streaming), phone-based OTP authentication, student enrollment, quizzes, and role-based access control. Features resumable uploads, Celery async processing, and scalable cloud architecture."
+      ]
+    },
+    {
+      role: "Backend Developer",
+      company: "No Name Group",
+      companylogo: require("./assets/images/logo-white.png"),
+      date: "July 2025 – October 2025",
+      // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Developed RESTful backend API for Setalkel platform, serving web, dashboard, and mobile applications. Implemented product catalog, order management, multi-tier pricing, role-based access control, and Firebase push notifications."
+      ]
+    },
+    {
+      role: "Backend Developer",
       company: "Apps&more",
       companylogo: require("./assets/images/company.png"),
       date: "August 2024 – Dec 2024",
@@ -216,8 +236,19 @@ const openSource = {
 
 const bigProjects = {
   title: "Projects",
-  subtitle: "SOME PROJECTS I WORKED ON AND CURRENTLY WORKING ON",
+  subtitle: "Some projects that I have worked on previously",
   projects: [
+    {
+      image: require("./assets/images/setalkel.png"),
+      projectName: "Setalkel",
+      projectDesc: "Setalkel is a B2B e-commerce marketplace for bulk product ordering with container-based shipping. I developed the RESTful backend API using Laravel 10, implementing product catalog, order management, multi-tier pricing, and authentication across web, dashboard, and mobile applications.",
+      footerLink: [
+        {
+          name: "View Website",
+          url: "https://setalkel.com/"
+        }
+      ]
+    },
     {
       image: require("./assets/images/marketing.jpg"),
       projectName: "Marketing",
@@ -376,7 +407,7 @@ const contactInfo = {
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+963 982 119 939",
-  email_address: "mohammadkalla17@gmail.com"
+  email_address: "basharkalla2001@gmail.com"
 };
 
 // Twitter Section
