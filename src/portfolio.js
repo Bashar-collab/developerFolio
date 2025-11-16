@@ -178,7 +178,7 @@ const workExperiences = {
   experience: [
     {
       role: "Backend Developer",
-      company: "One Door Group",
+      company: "One Door Company",
       companylogo: require("./assets/images/one-door.png"),
       date: "October 2025 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
