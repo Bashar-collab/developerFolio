@@ -43,14 +43,26 @@
     <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
     <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135618960-2"></script>
+    <!-- Google Analytics 4 (GA4) -->
+    <!-- 
+      SETUP INSTRUCTIONS:
+      1. Go to https://analytics.google.com/
+      2. Create an account and property (if you don't have one)
+      3. Go to Admin -> Data Streams -> Web Stream
+      4. Copy your Measurement ID (format: G-XXXXXXXXXX)
+      5. Replace G-XXXXXXXXXX below with your actual ID (in both places)
+      6. Save and rebuild your site
+      
+      For detailed setup, see ANALYTICS_SETUP.md
+    -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-017WGHTHC7"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'UA-135618960-2');
+      gtag('config', 'G-017WGHTHC7', {
+        page_path: window.location.pathname,
+      });
     </script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css">

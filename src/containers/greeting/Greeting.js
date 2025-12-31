@@ -8,6 +8,7 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import {illustration, greeting} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import {trackDownload, trackButtonClick} from "../../utils/analytics";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
@@ -39,12 +40,22 @@ export default function Greeting() {
               <div id="resume" className="empty-div"></div>
               <SocialMedia />
               <div className="button-greeting-div">
-                <Button text="Contact me" href="#contact" />
+                <a 
+                  href="#contact" 
+                  className="main-button"
+                  onClick={() => trackButtonClick("Contact Me", "Greeting Section")}
+                >
+                  Contact me
+                </a>
                 {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
                     download="Resume.pdf"
                     className="download-link-button"
+                    onClick={() => {
+                      trackDownload("Resume.pdf");
+                      trackButtonClick("Download Resume", "Greeting Section");
+                    }}
                   >
                     <Button text="Download my resume" />
                   </a>
