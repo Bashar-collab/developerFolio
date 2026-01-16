@@ -1,6 +1,7 @@
 {
-  "short_name": "DeveloperFolio",
-  "name": "DeveloperFolio",
+  "short_name": "Bashar Kalla",
+  "name": "Bashar Kalla - Backend Developer Portfolio",
+  "description": "Backend Developer specializing in Spring Boot, Django, Laravel, and microservices architecture",
   "icons": [
     {
       "src": "/favicon.ico",
