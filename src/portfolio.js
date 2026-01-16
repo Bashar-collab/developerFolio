@@ -49,14 +49,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "DEDICATED BACKEND DEVELOPER FOCUSED ON ROBUST API DESIGN AND SYSTEM ARCHITECTURE",
+  subTitle: "Dedicated backend developer focused on robust api design and system architecture",
   skills: [
-    emoji("⚡ Build scalable REST APIs using Spring Boot and Laravel"),
-    emoji("⚡ Design polymorphic relationships, factory resolvers, and dynamic services"),
-    emoji("⚡ Implement secure JWT authentication and role-based access control"),
-    emoji("⚡ Integrate with relational databases like PostgreSQL and Oracle"),
-    emoji("⚡ Apply clean architecture principles and localization (i18n) support"),
-    emoji("⚡ Develop and document real-world systems such as booking, offerings, and library management"),
+    emoji("⚡ Architect microservices using Spring Cloud, Eureka, and FeignClient for scalable distributed systems."),
+    emoji("⚡ Develop high-performance backends using Django 5.0+ and Golang with asynchronous task processing via Celery and Redis."),
+    emoji("⚡ Implement advanced media solutions including resumable uploads and video streaming via Bunny Storage CDN."),
+    emoji("⚡ Integrate and manage ERP systems (ERPNext) to automate complex sales workflows and customer service operations."),
+    emoji("⚡ Design large-scale enterprise platforms featuring QR-based check-ins, container-based shipping, and phone-based OTP authentication."),
+    emoji("⚡ Containerize applications using Docker to ensure consistent deployment across various environments."),
+    emoji("⚡ Leverage RPA (UiPath) and AI to automate manual processes, achieving up to 70% reduction in labor and 92% accuracy in document generation."),
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -64,57 +65,53 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
+      skillName: "Python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
+      skillName: "PHP",
+      fontAwesomeClassname: "fab fa-php"
+    },
+    {
+      skillName: "Laravel",
+      fontAwesomeClassname: "fab fa-laravel"
+    },
+    {
+      skillName: "Django",
+      fontAwesomeClassname: "fas fa-code"
+    },
+    {
+      skillName: "Java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "Spring Boot",
+      fontAwesomeClassname: "fas fa-leaf"
+    },
+    // {
+    //   skillName: "Golang",
+    //   fontAwesomeClassname: "fab fa-golang"
+    // },
+    {
+      skillName: "Docker",
       fontAwesomeClassname: "fab fa-docker"
-    }
+    },
+    {
+      skillName: "PostgreSQL",
+      fontAwesomeClassname: "fas fa-database"
+    },
+    {
+      skillName: "Git",
+      fontAwesomeClassname: "fab fa-git-alt"
+    },
+    {
+      skillName: "Firebase",
+      fontAwesomeClassname: "fas fa-fire"
+    },
+    {
+      skillName: "Postman",
+      fontAwesomeClassname: "fas fa-rocket"
+    },
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -161,7 +158,7 @@ const techStack = {
     },
     {
       Stack: "Problem solving",
-      progressPercentage: "20%"
+      progressPercentage: "50%"
     },
     {
       Stack: "Programming",
@@ -183,7 +180,7 @@ const workExperiences = {
       date: "October 2025 – Present",
       // desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       descBullets: [
-        "Developed Django REST API platform with course management, video streaming (Bunny Storage CDN and Streaming), phone-based OTP authentication, student enrollment, quizzes, and role-based access control. Features resumable uploads, Celery async processing, and scalable cloud architecture."
+        "Built and led backend systems for an e-learning platform and an enterprise visit management solution, delivering secure APIs, video streaming, background processing, and role-based access, while improving operational efficiency and supporting ERP-driven sales workflows."
       ]
     },
     {
@@ -238,6 +235,17 @@ const bigProjects = {
   title: "Projects",
   subtitle: "Some projects that I have worked on previously",
   projects: [
+    {
+      image: require("./assets/images/mtn.png"),
+      projectName: "MTN Cash Mobile",
+      projectDesc: "A mobile wallet platform that enables peer-to-peer money transfers, merchant payments, bill settlement, prepaid mobile top-ups, internet service payments, and charitable donations through a single secure application.",
+      footerLink: [
+        {
+          name: "View Website",
+          url: "https://cash.mtnsyr.com/"
+        }
+      ]
+    },
     {
       image: require("./assets/images/setalkel.png"),
       projectName: "Setalkel",
