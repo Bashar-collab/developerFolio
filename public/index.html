@@ -2,31 +2,81 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="canonical" href="https://bashar-collab.github.io/developerFolio/" />
 
     <!-- Edit meta tags for SEO -->
-    <title>DeveloperFolio | Developer Portfolio Template</title>
-    <meta name="title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta name="description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <title>Bashar Kalla - Backend Developer Portfolio</title>
+    <meta name="title" content="Bashar Kalla - Backend Developer Portfolio">
+    <meta name="description" content="Backend Developer specializing in Spring Boot, Django, Laravel, and microservices architecture. Experienced in REST APIs, PostgreSQL, Docker, and enterprise solutions. View my projects and skills.">
+    <meta name="keywords" content="Bashar Kalla, Backend Developer, Spring Boot, Django, Laravel, REST API, Microservices, PostgreSQL, Docker, Java, Python, PHP, Enterprise Solutions, API Development, Software Engineer">
+    <meta name="author" content="Bashar Kalla">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://developerfolio.js.org/">
-    <meta property="og:title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta property="og:description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://bashar-collab.github.io/developerFolio/">
+    <meta property="og:title" content="Bashar Kalla - Backend Developer Portfolio">
+    <meta property="og:description" content="Backend Developer specializing in Spring Boot, Django, Laravel, and microservices architecture. Experienced in REST APIs, PostgreSQL, Docker, and enterprise solutions.">
+    <meta property="og:site_name" content="Bashar Kalla Portfolio">
+    <meta property="profile:first_name" content="Bashar">
+    <meta property="profile:last_name" content="Kalla">
+    <meta property="profile:username" content="Bashar-collab">
     <!-- Link to a hosted image -->
     <!-- <meta property="og:image" content=""> -->
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://developerfolio.js.org/">
-    <meta property="twitter:title" content="DeveloperFolio | Developer Portfolio Template">
-    <meta property="twitter:description" content="Software Developer Portfolio Template that helps you showcase your work and skills as a software developer">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://bashar-collab.github.io/developerFolio/">
+    <meta property="twitter:title" content="Bashar Kalla - Backend Developer Portfolio">
+    <meta property="twitter:description" content="Backend Developer specializing in Spring Boot, Django, Laravel, and microservices architecture. Experienced in REST APIs, PostgreSQL, Docker, and enterprise solutions.">
+    <meta property="twitter:creator" content="@BasharKalla">
     <!-- Link to a hosted image -->
     <!-- <meta property="twitter:image" content=""> -->
 
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#6c63ff" />
+
+    <!-- Structured Data (JSON-LD) for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Bashar Kalla",
+      "url": "https://bashar-collab.github.io/developerFolio/",
+      "image": "https://bashar-collab.github.io/developerFolio/profile.jpg",
+      "jobTitle": "Backend Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "One Door Company"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "International University of Science and Technology"
+      },
+      "sameAs": [
+        "https://github.com/Bashar-collab",
+        "https://www.linkedin.com/in/bashar-kalla-1a3643338",
+        "https://www.facebook.com/Basharcool",
+        "https://www.instagram.com/bk_901/"
+      ],
+      "knowsAbout": [
+        "Spring Boot",
+        "Django",
+        "Laravel",
+        "REST APIs",
+        "Microservices",
+        "PostgreSQL",
+        "Docker",
+        "Java",
+        "Python",
+        "PHP"
+      ],
+      "description": "Backend Developer specializing in Spring Boot, Django, Laravel, and microservices architecture. Experienced in REST APIs, PostgreSQL, Docker, and enterprise solutions."
+    }
+    </script>
 
     <!-- Customize icons -->
     <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/favicon-32x32.png?v8=qAJ44G5Bm7">
@@ -40,8 +90,15 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     
-    <link rel=preload href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
-    <link rel=preload href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/static/media/Montserrat-Regular.ee653992.ttf" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/static/media/Agustina.21f233e1.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.15.4/css/all.min.css" as="style">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
     
     <!-- Google Analytics 4 (GA4) -->
     <!-- 

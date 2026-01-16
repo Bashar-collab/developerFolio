@@ -1,2 +1,12 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
+Allow: /
+
+Sitemap: https://bashar-collab.github.io/developerFolio/sitemap.xml
+
+# Prevent crawling of development files
+Disallow: /src/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /README.md
